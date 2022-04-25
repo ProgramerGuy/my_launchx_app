@@ -1,8 +1,8 @@
 const MissionCommander = require('./../app/missionCommander')
 
-describe("Esto es una suite de pruebas", () => {
+describe("1) Create a mission commander objet", () => {
     test('Caso de prueba 1', () => {
-        const result = 8 + 2;
-        expect(result).toBe(10);
+        const myMissionCommander = new MissionCommander('ProgramerGuy')
+        expect(myMissionCommander.name).toBe('ProgramerGuy');
     })
 })
